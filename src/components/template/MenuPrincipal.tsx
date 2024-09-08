@@ -1,4 +1,4 @@
-import { IconApps, IconHexagon1, IconLayout2 } from "@tabler/icons-react";
+import { IconApps, IconHexagon1, IconLayout2, IconListCheck } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
 export default function MenuPrincipal() {
@@ -16,6 +16,10 @@ export default function MenuPrincipal() {
                 <MenuItem text="Componente Página" link="/pagina">
                     <IconApps />
                     <span>Componente Página</span>
+                </MenuItem>
+                <MenuItem text="Estado" link="/estado">
+                    <IconListCheck />
+                    <span>Componente Estado</span>
                 </MenuItem>
             </nav>
         </aside >

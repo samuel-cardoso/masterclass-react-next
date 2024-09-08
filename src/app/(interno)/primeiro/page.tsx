@@ -36,22 +36,18 @@ export default function Primeiro() {
         )
     }
 
-    return (
-        <Pagina>
-            <div>
-                {titulo}
-                <div className="flex flex-col">
-                    <span>{1 + 1}</span>
-                    <span>{Math.random()}</span>
-                    <span>{anoAtual()}</span>
-                </div>
-                <span>{gerarUmaLista()}</span>
-                <div>
-                    <span>
-                        {PI * Math.pow(raio, 2)}
-                    </span>
-                </div>
-            </div>
-        </Pagina>
-    )
+    return <div className="text-white">
+        {titulo}
+        <div className="flex flex-col">
+            <span>{1 + 1}</span>
+            <span>{Math.random()}</span>
+            <span>{anoAtual()}</span>
+        </div>
+        <span>{gerarUmaLista()}</span>
+        <div>
+            <span>
+                {PI * Math.pow(raio, 2)}
+            </span>
+        </div>
+    </div>
 }

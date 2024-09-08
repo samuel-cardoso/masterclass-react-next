@@ -1,9 +1,8 @@
 import Caixa from "@/components/Caixa";
-import Pagina from "@/components/template/Pagina";
 
 export default function Page() {
     return (
-        <Pagina>
+
             <div className="h-96 w-[900px]">
                 <h1>
                     Flexbox
@@ -20,6 +19,6 @@ export default function Page() {
                     <Caixa texto='#3' className="w-20" />
                 </div>
             </div >
-        </Pagina>
+
     )
 }

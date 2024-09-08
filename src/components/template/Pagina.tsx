@@ -1,4 +1,5 @@
 import Cabecalho from "./Cabecalho";
+import Rodape from "./Footer";
 import MenuPrincipal from "./MenuPrincipal";
 
 export default function Pagina(props: any) {
@@ -7,9 +8,16 @@ export default function Pagina(props: any) {
             <Cabecalho />
             <div className="flex flex-grow">
                 <MenuPrincipal />
-                <main className="p-7">
-                    {props.children}
-                </main>
+
+                <div className='flex flex-col flex-1'>
+                    <main className="p-7 flex-1">
+                        {props.children}
+                    </main>
+                    <Rodape />
+                </div>
+
+
+
             </div>
 
         </div>
